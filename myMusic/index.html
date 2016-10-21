@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/music.js"></script>
+		<style type="text/css">
+		body{
+				width:100%;
+  	 			height:100%;
+				padding:0;
+				margin:0;
+			}
+		header,section{
+			padding:0;
+			margin:0;
+		}
+   		
+		header{
+			display: flex;
+			width:100%;
+			height:60px;
+			background: #3e5656;
+			position:fixed;
+			left:0;
+			top:0;
+			align-items:center;
+			opacity: 0.8;
+		}
+		 header p{
+		 	margin-left:20px;
+		 	color:#fff;
+		 }
+		 
+		 section{
+			color:#fff;
+		 	margin-top:60px;
+		 	margin-bottom: 110px;
+		 	width:100%;
+		 	background: #054859;
+		 }
+		 
+		 article{
+		 	width:100%;
+		 	display:flex;
+		 	flex-flow: row wrap;
+		 	border-bottom: solid 1px #e4e6e5;
+		 	justify-content:flex-start;/*靠左显示*/
+		
+		 }
+		  article:hover{
+		 background: #02223B;	
+		 }
+		 
+		 .art_p{
+		 	width:10%;
+		 	text-align: center;
+		 	align-self:center;
+		 }
+		 .musicDl{
+		 	width:80%;
+		 	display:flex;
+		 	align-items:center;
+		 	justify-content:space-between;
+		 }
+		/*底部*/
+		footer{
+			position:fixed;
+			bottom: 0;
+			left:0;
+			width:100%;
+			background:#02223b;
+		}
+		.footUl{
+			height:100px;
+			width:100%;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			padding:0;
+			margin:0;
+		}
+		.footUl li{
+			list-style: none;
+			
+		}
+		
+		.li1 img{
+			width:60px;
+			height:60px;
+			border-radius:50%;
+		}
+		
+		/*进度条*/
+		
+		.divTime{
+			position: fixed;
+			width:0%;
+			height:10px;
+			bottom:100px;
+			background: orange;
+		}
+		
+			
+html {
+    font-size: 62.5%;  10÷16=62.5% ;
+    
+	}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 94%!important; /* 15.04÷16=94% */
+    }
+}
+@media only screen and (min-width: 561px){
+    html {
+        font-size: 109%!important; /* 17.44÷16=109% */
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 125%!important; /* 20÷16=125% */
+    }
+}
+	
+	@font-face {font-family: "iconfont";
+    src: url('fonts/iconfont.eot?t=1471404582'); /* IE9*/
+    src: url('fonts/iconfont.eot?t=1471404582#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/iconfont.woff?t=1471404582') format('woff'), /* chrome, firefox */
+    url('fonts/iconfont.ttf?t=1471404582') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('fonts/iconfont.svg?t=1471404582#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon {
+    font-family:"iconfont" !important;
+    font-size:2rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color:#FFFFFF;
+}
+		</style>
+	</head>
+	<body>
+		<header>
+			<p>我的收藏</p>
+		</header>
+		<section id="sec">
+			<!--<article>
+				<p class="art_p">1</p>
+					<dl class="musicDl">
+						<dt>
+							<p>怒放的生命</p>
+							<p>汪峰</p>
+						</dt>
+						<dd>
+							<img src="images/abc_03.jpg">
+						</dd>
+					</dl>
+			</article>-->
+			
+		</section>
+		<div class="divTime">
+			<p></p>
+		</div>
+		<footer>
+			<ul class="footUl">
+				<li class="li1"><img src="images/wf.jpg">
+						<p class="footUl_p"></p>				
+				</li>
+				<li><i class="icon">&#xe601;</i></li>
+				<li><i class="icon play">&#xe600;</i></li>
+				<li><i class="icon nextMusic">&#xe602;</i></li>
+				<li><i class="icon">&#xe605;</i></li>
+			</ul>
+		</footer>
+		<audio id="ad" src="" autoplay="autoplay">
+		</audio>
+	</body>
+</html>
